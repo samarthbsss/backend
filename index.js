@@ -2,6 +2,7 @@ const express = require('express');
 const {connection} = require('./config/db');
 const {Showmodel}= require('./model/show.model')
 const {User} =require('./model/user.model');
+const cors = require('cors');
 const jwt =require('jsonwebtoken');
 const bcrypt =require('bcrypt');
 require('dotenv').config();
